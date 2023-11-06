@@ -1,0 +1,183 @@
+
+:root{
+  font-size: 62.5%;
+  
+    --bg-color-primary:#F9F4FB;
+    --bg-color-secundary: hsla(244, 38%, 28%, 1);
+    --font-color-primary: #b52184;
+    --text-secundary-color: #312d64;
+    --white: #ffffff;
+
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+  }
+body{
+  background-color: var(--bg-color-primary);
+
+}
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 10.9rem;
+    max-height: 83.6rem;
+  }
+
+  .titletopo{
+    order: 1; /* Flexbox item property: https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox#ordena%C3%A7%C3%A3o_de_elementos_flex */
+    margin-top: 31.2rem;
+  }
+
+  .imgtopo{
+    order: 2;
+  }
+  
+  .arrow{
+    margin: 0;
+    justify-self: flex-end;
+    padding-top: 17.9rem;
+
+  }
+  header p{
+    font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+  }
+
+h1{
+    font-size: 5.8287rem;
+    font-style: normal;
+    font-weight: 900;
+  }
+
+  h1, h2 {
+    color: var(--font-color-primary);
+   
+  }
+
+  .cards{
+        background-color: var(--bg-color-secundary);
+    display: flex;
+    justify-content: center;
+    padding: 6.4rem;
+    /* flex-direction: row; */
+    gap:6rem;
+}
+
+.card {
+  background-color: var(--bg-color-primary);
+  width: 36.6rem;
+  /* height: 44.8rem; */
+  padding: 3.2rem;
+  border-radius: 24px;
+}
+
+.card h2{
+  font-size: 3.53rem;
+  padding: 4rem 0 2.4rem;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.card p{
+  font-size: 1.94rem;
+  font-weight: 600;
+  line-height: normal;
+  
+
+}
+
+#contact {
+  display: flex;
+    align-items: center;
+    /* gap: 9.2rem; */
+    padding: 0;
+    /* height: 62.2rem; */
+    width: 100%;
+    margin: 0 auto;
+    background: url(./assets/img_stars.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+#contact form h2 {
+  font-size: 4.2rem;
+  margin-bottom: 4.3rem;
+}
+
+#contact form{
+  margin-left: 10.9rem;
+}
+
+#contact form .input-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+#contact form input,
+#contact form textarea {
+  width: 100%;
+  border: 0.15rem solid var(--bg-color-secundary);
+  border-radius: 1.6rem;
+  padding: 1.2rem 1.6rem 1.6rem;
+  color: var(--bg-color-secundary);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact form textarea {
+  height: 12.6rem;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: var(--bg-color-secundary);
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+#contact form input::placeholder {
+  padding-left: 2.8rem;
+}
+
+#contact form button {
+  background: var(--font-color-primary);
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+#contact form button:hover {
+  filter: brightness(0.9);
+}
+
+#name {
+  background: url(./assets/person.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+#email {
+  background: url(./assets/mail.svg) no-repeat scroll 1.4rem 1.2rem;
+}
+
+footer {
+  background: var(--text-secundary-color);
+
+  padding: 3.2rem 1.6rem;
+}
+
+footer p {
+  color: var(--white);
+  font-size: 1.9rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+}
